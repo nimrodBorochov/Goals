@@ -26,10 +26,22 @@ extension Issue {
         modificationDate ?? .now
     }
     
-    var issueTag: [Tag] {
+    var issueTags: [Tag] {
         let result = tags?.allObjects as? [Tag] ?? []
         return result.sorted()
     }
+    
+    var issueTagsList: String {
+        guard let tags else { return "No tags" }
+        
+        if tags.count == 0 {
+            return "No Tags"
+        } else {
+            return issueTags.map(\.tagName).formatted()
+        }
+    }
+    
+    var issueStatus : String { completed ? "Closed" : "Open" }
     
     static var example: Issue {
         let controller = DataController(inMemory: true)

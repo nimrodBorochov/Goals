@@ -23,7 +23,7 @@ struct IssueRow: View {
                         .font(.headline)
                         .lineLimit(1)
                     
-                    Text("No Tags")
+                    Text(issue.issueTagsList)
                         .foregroundColor(.secondary)
                         .lineLimit(1)
                 }
@@ -42,6 +42,7 @@ struct IssueRow: View {
                 .foregroundColor(.secondary)
             }
         }
+        .disabled(issue.isDeleted)
     }
 }
 
