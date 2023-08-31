@@ -42,7 +42,6 @@ struct IssueRow: View {
                 .foregroundColor(.secondary)
             }
         }
-        .disabled(issue.isDeleted)
     }
 }
 
