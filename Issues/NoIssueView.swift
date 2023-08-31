@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct NoIssueView: View {
-//    @EnvironmentObject var dataController: DataController
+    @EnvironmentObject var dataController: DataController
 
     var body: some View {
         Text("No Issue Selected")
             .font(.title)
             .foregroundColor(.secondary)
         
-        Button("New Issue") {
-            //TODO: make a new issue
-        }
+        Button("New Issue", action: dataController.newIssue)
+        
     }
 }
 
