@@ -18,7 +18,7 @@ struct ContentView: View {
             .onDelete(perform: delete)
         }
         .navigationTitle("Issues")
-        .searchable(text: $dataController.filterText, tokens: $dataController.filterTokens, suggestedTokens: .constant(dataController.suggestedFilterTokens), prompt: "Filter issues or type # to add tags") { tag in
+        .searchable(text: $dataController.filterText, tokens: $dataController.filterTokens, suggestedTokens: .constant(dataController.suggestedFilterTokens), prompt: "Filter issues, or type # to add tags") { tag in
             Text(tag.tagName)
         }
         .toolbar {
@@ -47,7 +47,7 @@ struct ContentView: View {
                     Picker("Status", selection: $dataController.filterStatus) {
                         Text("All").tag(Status.all)
                         Text("Open").tag(Status.open)
-                        Text("Close").tag(Status.closed)
+                        Text("Closed").tag(Status.closed)
                     }
                     
                     Picker("Priority", selection: $dataController.filterPriority) {
