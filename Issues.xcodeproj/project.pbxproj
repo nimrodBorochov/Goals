@@ -86,6 +86,7 @@
 				F378E2E62AA20A88007CA5B3 /* Issues.entitlements */,
 				F3A76F642A9F8ED500F2E3CE /* Info.plist */,
 				F3B6F5892A9E8CF30029350B /* IssuesApp.swift */,
+				F3A76F692A9F99C200F2E3CE /* Filter.swift */,
 				F3B6F59A2A9F33E70029350B /* DataController.swift */,
 				F3A76F652A9F96FC00F2E3CE /* SidebarView.swift */,
 				F3B6F58B2A9E8CF30029350B /* ContentView.swift */,
@@ -103,7 +104,6 @@
 				F3A76F772AA1D06900F2E3CE /* Colors.xcassets */,
 				F3B6F58D2A9E8CF40029350B /* Assets.xcassets */,
 				F3B6F58F2A9E8CF40029350B /* Preview Content */,
-				F3A76F692A9F99C200F2E3CE /* Filter.swift */,
 			);
 			path = Issues;
 			sourceTree = "<group>";
