@@ -29,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F378E2E62AA20A88007CA5B3 /* Issues.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Issues.entitlements; sourceTree = "<group>"; };
 		F3A76F642A9F8ED500F2E3CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F3A76F652A9F96FC00F2E3CE /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		F3A76F672A9F971800F2E3CE /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -82,6 +83,7 @@
 		F3B6F5882A9E8CF30029350B /* Issues */ = {
 			isa = PBXGroup;
 			children = (
+				F378E2E62AA20A88007CA5B3 /* Issues.entitlements */,
 				F3A76F642A9F8ED500F2E3CE /* Info.plist */,
 				F3B6F5892A9E8CF30029350B /* IssuesApp.swift */,
 				F3B6F59A2A9F33E70029350B /* DataController.swift */,
@@ -326,6 +328,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Issues/Issues.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -361,6 +364,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Issues/Issues.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
