@@ -9,13 +9,13 @@ import SwiftUI
 
 struct SidebarViewToolbar: View {
     @EnvironmentObject var dataController: DataController
-    @State var showingAwards:Bool = false
-    
+    @State var showingAwards: Bool = false
+
     var body: some View {
         Button(action: dataController.newTag) {
             Label("Add tag", systemImage: "plus")
         }
-        
+
         Button {
             showingAwards.toggle()
         } label: {
@@ -23,14 +23,14 @@ struct SidebarViewToolbar: View {
         }
         .sheet(isPresented: $showingAwards, content: AwardsView.init)
 
-        #if DEBUG
+    #if DEBUG
         Button {
             dataController.deleteAll()
             dataController.createSampleData()
         } label: {
             Label("ADD SAMPLES", systemImage: "flame")
         }
-        #endif
+    #endif
     }
 }
 
