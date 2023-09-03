@@ -8,7 +8,7 @@
 import XCTest
 @testable import Issues
 
-final class AssetTest: XCTestCase {
+final class AssetTests: XCTestCase {
     func testColorsExist() {
         let allColors = ["Dark Blue", "Dark Gray", "Gold", "Gray", "Green",
                          "Light Blue", "Midnight", "Orange", "Pink", "Purple", "Red", "Teal"]
