@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "1906A1BD-84BB-40B5-9091-F38591386B9F",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Goals.xcodeproj",
+        "identifier" : "F39B47DE2AA5C20100CD7690",
+        "name" : "GoalsUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
