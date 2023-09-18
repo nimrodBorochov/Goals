@@ -2,7 +2,7 @@
 //  NoGoalView.swift
 //  Goals
 //
-//  Created by nimrod borochov on 31/08/2023.
+//  Created by Nimrod Borochov on 31/08/2023.
 //
 
 import SwiftUI
@@ -16,7 +16,6 @@ struct NoGoalView: View {
             .foregroundColor(.secondary)
 
         Button("New Goal", action: dataController.newGoal)
-
     }
 }
 

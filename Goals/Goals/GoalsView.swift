@@ -2,12 +2,12 @@
 //  ContentView.swift
 //  Goals
 //
-//  Created by nimrod borochov on 29/08/2023.
+//  Created by Nimrod Borochov on 29/08/2023.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct GoalsView: View {
     @EnvironmentObject var dataController: DataController
 
     var body: some View {
@@ -26,7 +26,7 @@ struct ContentView: View {
         ) { tag in
             Text(tag.tagName)
         }
-        .toolbar(content: ContentViewToolbar.init)
+        .toolbar(content: GoalsViewToolbar.init)
     }
 
     func delete (_ offsets: IndexSet) {
@@ -41,7 +41,9 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-            .environmentObject(DataController.preview)
+        NavigationView {
+            GoalsView()
+                .environmentObject(DataController.preview)
+        }
     }
 }

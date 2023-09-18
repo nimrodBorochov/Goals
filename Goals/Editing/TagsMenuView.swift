@@ -2,7 +2,7 @@
 //  TagsMenuView.swift
 //  Goals
 //
-//  Created by nimrod borochov on 01/09/2023.
+//  Created by Nimrod Borochov on 01/09/2023.
 //
 
 import SwiftUI
@@ -13,18 +13,10 @@ struct TagsMenuView: View {
 
     var body: some View {
         Menu {
-            // selected tags
-            ForEach(goal.goalTags) { tag in
-                Button {
-                    goal.removeFromTags(tag)
-                } label: {
-                    Label(tag.tagName, systemImage: "checkmark")
-                }
-            }
+            selectedTags
 
             // unselected tags
             let otherTags = dataController.missingTags(from: goal)
-
             if otherTags.isEmpty == false {
                 Divider()
 
@@ -41,6 +33,16 @@ struct TagsMenuView: View {
                 .multilineTextAlignment(.leading)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .animation(nil, value: goal.goalTagsList)
+        }
+    }
+
+    private var selectedTags: some View {
+        ForEach(goal.goalTags) { tag in
+            Button {
+                goal.removeFromTags(tag)
+            } label: {
+                Label(tag.tagName, systemImage: "checkmark")
+            }
         }
     }
 }

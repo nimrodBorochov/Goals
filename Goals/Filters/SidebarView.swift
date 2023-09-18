@@ -2,7 +2,7 @@
 //  SidebarView.swift
 //  Goals
 //
-//  Created by nimrod borochov on 30/08/2023.
+//  Created by Nimrod Borochov on 30/08/2023.
 //
 
 import SwiftUI
@@ -19,16 +19,8 @@ struct SidebarView: View {
 
     var body: some View {
         List(selection: $viewModel.dataController.selectedFilter) {
-            Section("Smart Filters") {
-                ForEach(smartFilters, content: SmartFilterRow.init)
-            }
-
-            Section("Tags") {
-                ForEach(viewModel.tagFilters) { filter in
-                    UserFilterRow(filter: filter, rename: viewModel.rename, delete: viewModel.delete)
-                }
-                .onDelete(perform: viewModel.delete)
-            }
+            smartFiltersSection
+            tagsSection
         }
         .toolbar(content: SidebarViewToolbar.init)
         .alert("Rename tag", isPresented: $viewModel.renamingTag) {
@@ -37,6 +29,21 @@ struct SidebarView: View {
             TextField("New tag", text: $viewModel.tagName)
         }
         .navigationTitle("Filters")
+    }
+
+    private var smartFiltersSection: some View {
+        Section("Smart Filters") {
+            ForEach(smartFilters, content: SmartFilterRow.init)
+        }
+    }
+
+    private var tagsSection: some View {
+        Section("Tags") {
+            ForEach(viewModel.tagFilters) { filter in
+                UserFilterRow(filter: filter, rename: viewModel.rename, delete: viewModel.delete)
+            }
+            .onDelete(perform: viewModel.delete)
+        }
     }
 }
 

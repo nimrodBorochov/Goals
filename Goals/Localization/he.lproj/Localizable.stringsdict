@@ -13,7 +13,7 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>lld</string>
 			<key>zero</key>
-			<string>אין מטרה</string>
+			<string>אין מטרות</string>
 			<key>one</key>
 			<string>מטרה 1</string>
 			<key>other</key>

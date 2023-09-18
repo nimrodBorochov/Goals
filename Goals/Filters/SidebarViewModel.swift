@@ -2,7 +2,7 @@
 //  SidebarViewModel.swift
 //  Goals
 //
-//  Created by nimrod borochov on 07/09/2023.
+//  Created by Nimrod Borochov on 07/09/2023.
 //
 
 import CoreData
@@ -40,7 +40,6 @@ extension SidebarView { // allows to use the name ViewModel freely, because itâ€
             )
 
             super.init()
-
             tagController.delegate = self
 
             do {
@@ -51,7 +50,7 @@ extension SidebarView { // allows to use the name ViewModel freely, because itâ€
             }
         }
 
-        func delete (_ offsets: IndexSet) {
+        func delete(_ offsets: IndexSet) {
             for offset in offsets {
                 let item = tags[offset]
                 dataController.delete(item)

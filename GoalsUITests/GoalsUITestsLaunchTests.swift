@@ -2,7 +2,7 @@
 //  GoalsUITestsLaunchTests.swift
 //  GoalsUITests
 //
-//  Created by nimrod borochov on 04/09/2023.
+//  Created by Nimrod Borochov on 04/09/2023.
 //
 
 import XCTest

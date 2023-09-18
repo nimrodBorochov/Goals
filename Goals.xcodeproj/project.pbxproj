@@ -12,7 +12,7 @@
 		F378E2F32AA25293007CA5B3 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = F378E2F52AA25293007CA5B3 /* Awards.json */; };
 		F378E2F82AA27865007CA5B3 /* SidebarViewToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E2F72AA27865007CA5B3 /* SidebarViewToolbar.swift */; };
 		F378E2FA2AA27ADD007CA5B3 /* GoalViewToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E2F92AA27ADD007CA5B3 /* GoalViewToolbar.swift */; };
-		F378E2FC2AA27BFB007CA5B3 /* ContentViewToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E2FB2AA27BFB007CA5B3 /* ContentViewToolbar.swift */; };
+		F378E2FC2AA27BFB007CA5B3 /* GoalsViewToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E2FB2AA27BFB007CA5B3 /* GoalsViewToolbar.swift */; };
 		F378E2FE2AA27DD0007CA5B3 /* TagsMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E2FD2AA27DD0007CA5B3 /* TagsMenuView.swift */; };
 		F378E3022AA30827007CA5B3 /* SmartFilterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E3012AA30827007CA5B3 /* SmartFilterRow.swift */; };
 		F378E3042AA30889007CA5B3 /* UserFilterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F378E3032AA30889007CA5B3 /* UserFilterRow.swift */; };
@@ -41,11 +41,11 @@
 		F3B073692AA4C30E002649DD /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B073682AA4C30E002649DD /* DevelopmentTests.swift */; };
 		F3B0736B2AA4CF98002649DD /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0736A2AA4CF98002649DD /* ExtensionTests.swift */; };
 		F3B6F58A2A9E8CF30029350B /* GoalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B6F5892A9E8CF30029350B /* GoalsApp.swift */; };
-		F3B6F58C2A9E8CF30029350B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B6F58B2A9E8CF30029350B /* ContentView.swift */; };
 		F3B6F58E2A9E8CF40029350B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3B6F58D2A9E8CF40029350B /* Assets.xcassets */; };
 		F3B6F5912A9E8CF40029350B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3B6F5902A9E8CF40029350B /* Preview Assets.xcassets */; };
 		F3B6F5992A9F31FC0029350B /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3B6F5972A9F31FC0029350B /* Main.xcdatamodeld */; };
 		F3B6F59B2A9F33E70029350B /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B6F59A2A9F33E70029350B /* DataController.swift */; };
+		F3D3FAB12AB74DA300CD978A /* GoalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B6F58B2A9E8CF30029350B /* GoalsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +76,7 @@
 		F378E2F62AA25297007CA5B3 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = he; path = he.lproj/Awards.json; sourceTree = "<group>"; };
 		F378E2F72AA27865007CA5B3 /* SidebarViewToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewToolbar.swift; sourceTree = "<group>"; };
 		F378E2F92AA27ADD007CA5B3 /* GoalViewToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewToolbar.swift; sourceTree = "<group>"; };
-		F378E2FB2AA27BFB007CA5B3 /* ContentViewToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewToolbar.swift; sourceTree = "<group>"; };
+		F378E2FB2AA27BFB007CA5B3 /* GoalsViewToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewToolbar.swift; sourceTree = "<group>"; };
 		F378E2FD2AA27DD0007CA5B3 /* TagsMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsMenuView.swift; sourceTree = "<group>"; };
 		F378E3012AA30827007CA5B3 /* SmartFilterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartFilterRow.swift; sourceTree = "<group>"; };
 		F378E3032AA30889007CA5B3 /* UserFilterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFilterRow.swift; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		F3B0736A2AA4CF98002649DD /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
 		F3B6F5862A9E8CF30029350B /* Goals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B6F5892A9E8CF30029350B /* GoalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsApp.swift; sourceTree = "<group>"; };
-		F3B6F58B2A9E8CF30029350B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F3B6F58B2A9E8CF30029350B /* GoalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsView.swift; sourceTree = "<group>"; };
 		F3B6F58D2A9E8CF40029350B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3B6F5902A9E8CF40029350B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F3B6F5982A9F31FC0029350B /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
@@ -196,8 +196,8 @@
 		F3830FE62AA4984B0064E3B6 /* Goals */ = {
 			isa = PBXGroup;
 			children = (
-				F3B6F58B2A9E8CF30029350B /* ContentView.swift */,
-				F378E2FB2AA27BFB007CA5B3 /* ContentViewToolbar.swift */,
+				F3B6F58B2A9E8CF30029350B /* GoalsView.swift */,
+				F378E2FB2AA27BFB007CA5B3 /* GoalsViewToolbar.swift */,
 				F3A76F6F2A9FE29400F2E3CE /* GoalRow.swift */,
 			);
 			path = Goals;
@@ -488,15 +488,15 @@
 				F378E3022AA30827007CA5B3 /* SmartFilterRow.swift in Sources */,
 				F3A76F7E2AA1D33800F2E3CE /* AwardsView.swift in Sources */,
 				F3A76F6E2A9FD5CF00F2E3CE /* Tag-CoreDataHelpers.swift in Sources */,
+				F3D3FAB12AB74DA300CD978A /* GoalsView.swift in Sources */,
 				F3B6F5992A9F31FC0029350B /* Main.xcdatamodeld in Sources */,
 				F3A76F6C2A9FD12000F2E3CE /* Goal-CoreDataHelpers.swift in Sources */,
 				F3A76F762AA1CA9B00F2E3CE /* Bundle-Decodable.swift in Sources */,
 				F3A76F682A9F971800F2E3CE /* DetailView.swift in Sources */,
 				F38558992AA9AFFB0019F18C /* SidebarViewModel.swift in Sources */,
 				F3B6F59B2A9F33E70029350B /* DataController.swift in Sources */,
-				F378E2FC2AA27BFB007CA5B3 /* ContentViewToolbar.swift in Sources */,
+				F378E2FC2AA27BFB007CA5B3 /* GoalsViewToolbar.swift in Sources */,
 				F3A76F662A9F96FC00F2E3CE /* SidebarView.swift in Sources */,
-				F3B6F58C2A9E8CF30029350B /* ContentView.swift in Sources */,
 				F378E2F82AA27865007CA5B3 /* SidebarViewToolbar.swift in Sources */,
 				F3A76F722AA086AF00F2E3CE /* GoalView.swift in Sources */,
 				F378E3042AA30889007CA5B3 /* UserFilterRow.swift in Sources */,

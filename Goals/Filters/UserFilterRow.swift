@@ -2,7 +2,7 @@
 //  UserFilterRow.swift
 //  Goals
 //
-//  Created by nimrod borochov on 02/09/2023.
+//  Created by Nimrod Borochov on 02/09/2023.
 //
 
 import SwiftUI
@@ -17,21 +17,28 @@ struct UserFilterRow: View {
             Label(filter.name, systemImage: filter.icon)
                 .badge(filter.activeGoalsCount)
                 .contextMenu {
-                    Button {
-                        rename(filter)
-                    } label: {
-                        Label("Rename", systemImage: "pencil")
-                    }
-
-                    Button(role: .destructive) {
-                        delete(filter)
-                    } label: {
-                        Label("Delete", systemImage: "trash")
-                    }
+                    renameButton
+                    deleteBotton
                 }
                 .accessibilityElement()
                 .accessibilityLabel(filter.name)
                 .accessibilityHint("\(filter.activeGoalsCount) goals")
+        }
+    }
+
+    private var renameButton: some View {
+        Button {
+            rename(filter)
+        } label: {
+            Label("Rename", systemImage: "pencil")
+        }
+    }
+
+    private var deleteBotton: some View {
+        Button(role: .destructive) {
+            delete(filter)
+        } label: {
+            Label("Delete", systemImage: "trash")
         }
     }
 }

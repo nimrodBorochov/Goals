@@ -2,7 +2,7 @@
 //  AwardsTest.swift
 //  GoalsTests
 //
-//  Created by nimrod borochov on 03/09/2023.
+//  Created by Nimrod Borochov on 03/09/2023.
 //
 
 import CoreData

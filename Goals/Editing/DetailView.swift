@@ -2,7 +2,7 @@
 //  DetailView.swift
 //  Goals
 //
-//  Created by nimrod borochov on 30/08/2023.
+//  Created by Nimrod Borochov on 30/08/2023.
 //
 
 import SwiftUI
@@ -25,7 +25,9 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView()
-            .environmentObject(DataController.preview)
+        NavigationView {
+            DetailView()
+                .environmentObject(DataController.preview)
+        }
     }
 }

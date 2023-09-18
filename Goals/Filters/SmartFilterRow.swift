@@ -2,7 +2,7 @@
 //  SmartFilterRow.swift
 //  Goals
 //
-//  Created by nimrod borochov on 02/09/2023.
+//  Created by Nimrod Borochov on 02/09/2023.
 //
 
 import SwiftUI

@@ -2,7 +2,7 @@
 //  AwardsView.swift
 //  Goals
 //
-//  Created by nimrod borochov on 01/09/2023.
+//  Created by Nimrod Borochov on 01/09/2023.
 //
 
 import SwiftUI

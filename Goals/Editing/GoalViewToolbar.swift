@@ -2,7 +2,7 @@
 //  GoalViewToolbar.swift
 //  Goals
 //
-//  Created by nimrod borochov on 01/09/2023.
+//  Created by Nimrod Borochov on 01/09/2023.
 //
 
 import SwiftUI
@@ -17,18 +17,8 @@ struct GoalViewToolbar: View {
 
     var body: some View {
         Menu {
-            Button {
-                UIPasteboard.general.string = goal.title
-            } label: {
-                Label("Copy Goal Title", systemImage: "doc.on.doc")
-            }
-
-            Button {
-                goal.completed.toggle()
-                dataController.save()
-            } label: {
-                Label(openCloseButtonText, systemImage: "bubble.left.and.exclamationmark.bubble.right")
-            }
+            copyGoalTitleButton
+            openCloseButton
 
             Divider()
 
@@ -38,6 +28,23 @@ struct GoalViewToolbar: View {
 
         } label: {
             Label("Actions", systemImage: "ellipsis.circle")
+        }
+    }
+
+    private var copyGoalTitleButton: some View {
+        Button {
+            UIPasteboard.general.string = goal.title
+        } label: {
+            Label("Copy Goal Title", systemImage: "doc.on.doc")
+        }
+    }
+
+    private var openCloseButton: some View {
+        Button {
+            goal.completed.toggle()
+            dataController.save()
+        } label: {
+            Label(openCloseButtonText, systemImage: "bubble.left.and.exclamationmark.bubble.right")
         }
     }
 }

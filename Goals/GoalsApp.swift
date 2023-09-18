@@ -2,7 +2,7 @@
 //  GoalsApp.swift
 //  Goals
 //
-//  Created by nimrod borochov on 29/08/2023.
+//  Created by Nimrod Borochov on 29/08/2023.
 //
 
 import SwiftUI
@@ -17,7 +17,7 @@ struct GoalsApp: App {
             NavigationSplitView {
                 SidebarView(dataController: dataController)
             } content: {
-                ContentView()
+                GoalsView()
             } detail: {
                 DetailView()
             }
