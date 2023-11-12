@@ -45,10 +45,6 @@ extension Goal {
 
     var goalStatus: String { NSLocalizedString(completed ? "Closed" : "Open", comment: "goal status") }
 
-    var goalFormattedCreationDate: String {
-        goalCreationDate.formatted(date: .numeric, time: .omitted)
-    }
-
     static var example: Goal {
         let controller = DataController(inMemory: true)
         let viewContext = controller.container.viewContext

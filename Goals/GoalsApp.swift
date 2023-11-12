@@ -17,7 +17,7 @@ struct GoalsApp: App {
             NavigationSplitView {
                 SidebarView(dataController: dataController)
             } content: {
-                GoalsView()
+                GoalsView(dataController: dataController)
             } detail: {
                 DetailView()
             }

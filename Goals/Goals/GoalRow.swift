@@ -9,22 +9,22 @@ import SwiftUI
 
 struct GoalRow: View {
     @EnvironmentObject var dataController: DataController
-    @ObservedObject var goal: Goal
+    @StateObject var viewModel: ViewModel
 
     var body: some View {
-        NavigationLink(value: goal) {
+        NavigationLink(value: viewModel.goal) {
             HStack {
                 Image(systemName: "exclamationmark.circle")
                     .imageScale(.large)
-                    .opacity(goal.priority == 2 ? 1 : 0)
-                    .accessibilityIdentifier(goal.priority == 2 ? "\(goal.goalTitle) High Priority" : "")
+                    .opacity(viewModel.iconOpacity)
+                    .accessibilityIdentifier(viewModel.iconIdentifier)
 
                 VStack(alignment: .leading) {
-                    Text(goal.goalTitle)
+                    Text(viewModel.goalTitle)
                         .font(.headline)
                         .lineLimit(1)
 
-                    Text(goal.goalTagsList)
+                    Text(viewModel.goalTagsList)
                         .foregroundColor(.secondary)
                         .lineLimit(1)
                 }
@@ -32,11 +32,11 @@ struct GoalRow: View {
                 Spacer()
 
                 VStack(alignment: .trailing) {
-                    Text(goal.goalFormattedCreationDate)
-                        .accessibilityLabel(goal.goalCreationDate.formatted(date: .abbreviated, time: .omitted))
+                    Text(viewModel.creationDate)
+                        .accessibilityLabel(viewModel.accessibilityCreationDate)
                         .font(.subheadline)
 
-                    if goal.completed {
+                    if viewModel.completed {
                         Text("CLOSED")
                             .font(.body.smallCaps())
                     }
@@ -44,8 +44,13 @@ struct GoalRow: View {
                 .foregroundColor(.secondary)
             }
         }
-        .accessibilityHint(goal.priority == 2 ? "High priority " : "")
-        .accessibilityIdentifier(goal.goalTitle)
+        .accessibilityHint(viewModel.accessibilityHint)
+        .accessibilityIdentifier(viewModel.goalTitle)
+    }
+
+    init(goal: Goal) {
+        let viewModel = ViewModel(goal: goal)
+        _viewModel = StateObject(wrappedValue: viewModel)
     }
 }
 

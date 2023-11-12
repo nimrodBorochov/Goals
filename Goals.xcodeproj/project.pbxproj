@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F37801FF2ADFC4CE007388D9 /* GoalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37801FE2ADFC4CE007388D9 /* GoalsViewModel.swift */; };
+		F37802012ADFC70F007388D9 /* GoalRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37802002ADFC70F007388D9 /* GoalRowViewModel.swift */; };
 		F378E2EB2AA2434C007CA5B3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F378E2ED2AA2434C007CA5B3 /* Localizable.strings */; };
 		F378E2EF2AA2509F007CA5B3 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = F378E2F12AA2509F007CA5B3 /* Localizable.stringsdict */; };
 		F378E2F32AA25293007CA5B3 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = F378E2F52AA25293007CA5B3 /* Awards.json */; };
@@ -67,6 +69,8 @@
 
 /* Begin PBXFileReference section */
 		F3056AC92AA5E21700DC9EC4 /* GoalsUITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = GoalsUITests.xctestplan; sourceTree = "<group>"; };
+		F37801FE2ADFC4CE007388D9 /* GoalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewModel.swift; sourceTree = "<group>"; };
+		F37802002ADFC70F007388D9 /* GoalRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalRowViewModel.swift; sourceTree = "<group>"; };
 		F378E2E62AA20A88007CA5B3 /* Goals.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Goals.entitlements; sourceTree = "<group>"; };
 		F378E2EC2AA2434C007CA5B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F378E2EE2AA24407007CA5B3 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -197,8 +201,10 @@
 			isa = PBXGroup;
 			children = (
 				F3B6F58B2A9E8CF30029350B /* GoalsView.swift */,
+				F37801FE2ADFC4CE007388D9 /* GoalsViewModel.swift */,
 				F378E2FB2AA27BFB007CA5B3 /* GoalsViewToolbar.swift */,
 				F3A76F6F2A9FE29400F2E3CE /* GoalRow.swift */,
+				F37802002ADFC70F007388D9 /* GoalRowViewModel.swift */,
 			);
 			path = Goals;
 			sourceTree = "<group>";
@@ -489,6 +495,7 @@
 				F3A76F7E2AA1D33800F2E3CE /* AwardsView.swift in Sources */,
 				F3A76F6E2A9FD5CF00F2E3CE /* Tag-CoreDataHelpers.swift in Sources */,
 				F3D3FAB12AB74DA300CD978A /* GoalsView.swift in Sources */,
+				F37802012ADFC70F007388D9 /* GoalRowViewModel.swift in Sources */,
 				F3B6F5992A9F31FC0029350B /* Main.xcdatamodeld in Sources */,
 				F3A76F6C2A9FD12000F2E3CE /* Goal-CoreDataHelpers.swift in Sources */,
 				F3A76F762AA1CA9B00F2E3CE /* Bundle-Decodable.swift in Sources */,
@@ -497,6 +504,7 @@
 				F3B6F59B2A9F33E70029350B /* DataController.swift in Sources */,
 				F378E2FC2AA27BFB007CA5B3 /* GoalsViewToolbar.swift in Sources */,
 				F3A76F662A9F96FC00F2E3CE /* SidebarView.swift in Sources */,
+				F37801FF2ADFC4CE007388D9 /* GoalsViewModel.swift in Sources */,
 				F378E2F82AA27865007CA5B3 /* SidebarViewToolbar.swift in Sources */,
 				F3A76F722AA086AF00F2E3CE /* GoalView.swift in Sources */,
 				F378E3042AA30889007CA5B3 /* UserFilterRow.swift in Sources */,
